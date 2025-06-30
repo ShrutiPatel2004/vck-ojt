@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 const HomePage = () => {
     return(
@@ -28,8 +29,8 @@ const HomePage = () => {
             <h2>Campus Life & Facilities</h2>
             <hr></hr>
             <div className="image-gallery">
-                <img src="../Images/students-studying.jpeg" alt="Students studying in library"/>  
-                <img src="../Images/campus-life.jpg" alt="Campus life in vck"/>
+                <img src="../Images/students-studying.jpeg" alt="Students studying in library" height={200} width={399}/>  
+                <img src="../Images/campus-life.jpg" alt="Campus life in vck" height={200} width={399}/>
              </div>
              <p>Explore our vibrant campus and state-of-the-art facilities designed to enhance your learning experience and personal growth.</p>
              <div className="call-to-action">

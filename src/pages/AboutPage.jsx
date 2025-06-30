@@ -1,7 +1,4 @@
 //import Header from "../components/Header/Header";
-
-
-
  const AboutPage = () => {
      return(
          <div className="page-container" style={{overflow:"auto"}}>

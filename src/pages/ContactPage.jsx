@@ -1,4 +1,4 @@
-import Header from "../components/Header/Header";
+// import Header from "../components/Header/Header";
 
 const ContactPage =() =>{
     return(
@@ -32,7 +32,7 @@ const ContactPage =() =>{
             <hr></hr>
             <p>[A contact form with fields for Name, Email, Subject, Message can be added here.]</p>
         </div>
-    )
+    );
 }
 
 

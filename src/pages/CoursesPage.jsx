@@ -1,5 +1,7 @@
-import Header from "../components/Header/Header";
+// import Header from "../components/Header/Header";
+import React from 'react';
 import { Link } from 'react-router-dom';
+import CollegeTourVideo from "\Videos\college-tour.mp4";
 const CoursesPage = () => {
     return(
        
@@ -10,8 +12,9 @@ const CoursesPage = () => {
             <h2>Discover Campus Life</h2>
             <div className="video-container">
             <hr></hr>
-            <video src="https://vck-ojt.vercel.app/assets/college-tour-FAmcnyfF.mp4"  controls width="100%" height="auto" className="course-video" >
-            Your browser does not support the video tag.
+            <video controls width="100%" height="auto" className="course-video" >
+                <source src={CollegeTourVideo} type="video/mp4"/>
+                 Your browser does not support the video tag.
             </video>
             <p className="video-caption">
                 Get a glimpse of the vibrant academic and social life at Vivekanand College.
@@ -40,7 +43,7 @@ const CoursesPage = () => {
                 <hr></hr>
                 <ul>
                     <li>Master of Science (M.Sc.)</li>
-                    <ul Type="circle">
+                    <ul>
                         <li>Computer Science (2 years)</li>
                         <li>Information Technology (2 years)</li>
 
@@ -51,7 +54,7 @@ const CoursesPage = () => {
             </ul>
             <h2>Program Details & Fee Structure (Annual)</h2>
             <hr></hr>
-                <table border={1} className="admissions-table course-details-table">
+                <table className="admissions-table course-details-table">
                  <thead>
                     <tr>
                     <th>Program Type</th>

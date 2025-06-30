@@ -76,7 +76,7 @@ const AdmissionsPage = () => {
         admissions office.
       </p>
       <h2>Eligibility Criteria for Undergraduate Programs</h2>
-      <table border={1} className="admissions-table">
+      <table className="admissions-table">
         <thead>
           <tr>
             <th>Program</th>
@@ -145,7 +145,7 @@ const AdmissionsPage = () => {
           className="btn"
         >
           Start Your Online Application
-        </a> */}
+        </a>*/ }
       {/* Replace "https://yourcollegeadmissionportal.com" with a real application portal link */}
       {/* </div> */}
     </div>
