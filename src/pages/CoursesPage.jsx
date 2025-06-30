@@ -1,12 +1,11 @@
-// import Header from "../components/Header/Header";
-import React from 'react';
+import React from "react";
 import { Link } from 'react-router-dom';
 import CollegeTourVideo from "\Videos\college-tour.mp4";
 const CoursesPage = () => {
     return(
        
         <div className="page-container" style={{overflow:"auto"}}>
-            {/* <Header></Header> */}
+           
             <h1>Our Academic Programs</h1>
             <p>Vivekanand College offers a comprehensive range of undergraduate and postgraduate programs designed to equip students with the knowledge and skills demanded by today's dynamic global landscape. Our curriculum is regularly updated to reflect industry trends and academic advancements.</p>
             <h2>Discover Campus Life</h2>
