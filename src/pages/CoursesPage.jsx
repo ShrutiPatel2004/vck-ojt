@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import CollegeTourVideo from "\Videos\college-tour.mp4";
 const CoursesPage = () => {
     return(
        
@@ -12,7 +11,7 @@ const CoursesPage = () => {
             <div className="video-container">
             <hr></hr>
             <video controls width="100%" height="auto" className="course-video" >
-                <source src={CollegeTourVideo} type="video/mp4"/>
+                <source src="/Videos/college-tour.mp4" type="video/mp4"/>
                  Your browser does not support the video tag.
             </video>
             <p className="video-caption">
