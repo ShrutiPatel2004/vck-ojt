@@ -1,15 +1,22 @@
 import Header from "../components/Header/Header";
-
+import { Link } from 'react-router-dom';
 const CoursesPage = () => {
     return(
        
-        <div>
-            <Header></Header>
+        <div className="page-container" style={{overflow:"auto"}}>
+            {/* <Header></Header> */}
             <h1>Our Academic Programs</h1>
             <p>Vivekanand College offers a comprehensive range of undergraduate and postgraduate programs designed to equip students with the knowledge and skills demanded by today's dynamic global landscape. Our curriculum is regularly updated to reflect industry trends and academic advancements.</p>
             <h2>Discover Campus Life</h2>
+            <div className="video-container">
             <hr></hr>
-            <video src="https://vck-ojt.vercel.app/assets/college-tour-FAmcnyfF.mp4" controls  width="700" height="auto"></video>
+            <video src="https://vck-ojt.vercel.app/assets/college-tour-FAmcnyfF.mp4"  controls width="100%" height="auto" className="course-video" >
+            Your browser does not support the video tag.
+            </video>
+            <p className="video-caption">
+                Get a glimpse of the vibrant academic and social life at Vivekanand College.
+            </p>
+            </div>
             <h2>Undergraduate Programs (UG)</h2>
             <hr></hr>
             <ul>
@@ -44,7 +51,7 @@ const CoursesPage = () => {
             </ul>
             <h2>Program Details & Fee Structure (Annual)</h2>
             <hr></hr>
-                <table border={1}>
+                <table border={1} className="admissions-table course-details-table">
                  <thead>
                     <tr>
                     <th>Program Type</th>
@@ -81,12 +88,12 @@ const CoursesPage = () => {
                 <h2>Specialized & Vocational Courses</h2>
                 <hr></hr>
                 <p>In addition to traditional degree programs, we offer various certificate and diploma courses in areas like Digital Marketing, Web Development, Data Analytics, and Soft Skills Development, providing specialized training for career enhancement.</p>
-                <div className="box">
+                <div className="call-to-action">
                     <p>Have questions about a specific course?</p>
-                    <a href="/contact" >Inquire About Courses</a>
+                    <Link to="/contact" className="btn">Inquire About Courses</Link>
                 </div>
         </div>
-    )
+    );
 }
 
 
